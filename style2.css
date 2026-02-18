@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c853;
+}
+
+/* SECTION LAYOUT */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LEFT SIDE */
+.left {
+    background: #ffffff;
+}
+
+/* RIGHT SIDE */
+.right {
+    background: #e8f5e9;
+}
+
+/* IMAGE BOX - 85% HEIGHT */
+.image-box {
+    width: 100%;
+    height: 85%;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+/* CHECKOUT BUTTON - FULL WIDTH */
+.checkout-btn {
+    width: 100%;
+    padding: 16px 0;
+    background: #00c853;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: #009624;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* SECTION BORDER */
+section {
+    border-bottom: 4px solid #000000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .image-box {
+        height: 300px;
+    }
+}
